@@ -6,5 +6,5 @@ openai
 requests
 matplotlib
 XlsxWriter
-serpapi
+google-search-results
 
