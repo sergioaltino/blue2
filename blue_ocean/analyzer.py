@@ -1,11 +1,11 @@
-SUA_CHAVE_OPENAI = "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"
+OPENAI_API_KEY  = "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"
 
 # blue_ocean/analyzer.py
 
 import openai
 
 # Ajuste sua chave de API da OpenAI
-client = openai.OpenAI(api_key=SUA_CHAVE_OPENAI)
+client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 def extract_value_factors(company_snippets):
     if not isinstance(company_snippets, dict) or not company_snippets:
@@ -34,3 +34,5 @@ def extract_value_factors(company_snippets):
     factors = [line.strip("- ").strip() for line in content.split("\n") if line.strip()]
 
     return factors
+
+
